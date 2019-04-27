@@ -3,5 +3,8 @@ language: python
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install -r requirements-tests.txt
 script:
-  - pytest
+  - pytest --cov=calculator/
+after_success:
+  - coveralls
