@@ -13,6 +13,12 @@ def test_subtraction():
     assert 0 == result
 
 
+def test_multiplication():
+    c = Calculator()
+    result = c.mul(5, 5)
+    assert 25 == result
+
+
 def test_division():
     c = Calculator()
     result = c.div(10, 2)

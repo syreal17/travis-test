@@ -12,7 +12,7 @@ class Calculator:
 
     def mul(self, a, b):
         """Multiply a and b and return the product"""
-        return a + b
+        return a * b
 
     def div(self, dividend, divisor):
         """Divide ``dividend`` by ``divisor`` and return the quotient."""
