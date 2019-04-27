@@ -17,3 +17,4 @@ script:
   - pytest --cov=calculator/
 after_success:
   - coveralls
+  - codecov
