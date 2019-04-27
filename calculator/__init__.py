@@ -1,4 +1,4 @@
-
+import math
 
 class Calculator:
 
@@ -17,3 +17,7 @@ class Calculator:
     def div(self, dividend, divisor):
         """Divide ``dividend`` by ``divisor`` and return the quotient."""
         return dividend / divisor
+
+    def pow(self, x, y):
+        """Returns x to the power of y."""
+        return math.pow(x, y)

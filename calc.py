@@ -48,5 +48,15 @@ def div(a, b):
     click.echo('{} / {} = {}'.format(a, b, result))
 
 
+@cli.command()
+@click.argument('a', type=int)
+@click.argument('b', type=int)
+def pow(a, b):
+    """Returns a to the power of b"""
+    c = Calculator()
+    result = c.pow(a, b)
+    click.echo('{}**{} = {}'.format(a, b, result))
+
+
 if __name__ == '__main__':
     cli()
